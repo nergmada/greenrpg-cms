@@ -18,4 +18,7 @@ module.exports = ({ env }) => ({
   "strapi-plugin-populate-deep": {
     deaultDepth: 5,
   },
+  "import-export-entries": {
+    enabled: true,
+  },
 });

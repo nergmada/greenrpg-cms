@@ -40,6 +40,11 @@
     },
     "start_location": {
       "type": "integer"
+    },
+    "playlist": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::playlist.playlist"
     }
   }
 }

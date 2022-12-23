@@ -1,11 +1,35 @@
-import path from 'path';
+import path from "path";
+import { parse } from "pg-connection-string";
 
-export default ({ env }) => ({
+const POSTGRES_CONFIG = (config, env) => ({
   connection: {
-    client: 'sqlite',
+    client: "postgres",
     connection: {
-      filename: path.join(__dirname, '..', '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+      ...config,
+      ssl: {
+        rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false),
+      },
     },
-    useNullAsDefault: true,
   },
 });
+
+export default ({ env }) => {
+  if (env("DB_CONNECTION", "default") === "postgres") {
+    const config = parse(env("DB_URL", ""));
+    return POSTGRES_CONFIG(config, env);
+  }
+  return {
+    connection: {
+      client: "sqlite",
+      connection: {
+        filename: path.join(
+          __dirname,
+          "..",
+          "..",
+          env("DATABASE_FILENAME", ".tmp/data.db")
+        ),
+      },
+      useNullAsDefault: true,
+    },
+  };
+};

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "playlists",
+  "info": {
+    "singularName": "playlist",
+    "pluralName": "playlists",
+    "displayName": "Playlist",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tracks": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "sound_effects": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
