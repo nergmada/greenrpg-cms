@@ -48,6 +48,9 @@ export default {
         socket.on("update_pool", pool_change(game_id, strapi.socketIO));
         socket.on("give_dice", give_dice(game_id, strapi.socketIO));
         socket.on("roll_dice", roll_dice(game_id, strapi.socketIO));
+        socket.on("play_effect", (id) =>
+          strapi.socketIO.to(game_id).emit("play_effect", id)
+        );
       });
     });
   },
