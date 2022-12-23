@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_maps_map_icons",
+  "info": {
+    "displayName": "Map Icon",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "x": {
+      "type": "decimal"
+    },
+    "y": {
+      "type": "decimal"
+    },
+    "description": {
+      "displayName": "Description",
+      "type": "component",
+      "repeatable": false,
+      "component": "general.description"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "action": {
+      "type": "string"
+    }
+  }
+}

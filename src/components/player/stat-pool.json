@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_player_stat_pool",
+  "info": {
+    "displayName": "Pool",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "max": {
+      "type": "integer"
+    },
+    "current": {
+      "type": "integer"
+    }
+  }
+}

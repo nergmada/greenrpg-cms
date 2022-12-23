@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_player_pools",
+  "info": {
+    "displayName": "Pools",
+    "icon": "ankh"
+  },
+  "options": {},
+  "attributes": {
+    "health": {
+      "displayName": "Health",
+      "type": "component",
+      "repeatable": false,
+      "component": "player.stat-pool"
+    },
+    "might": {
+      "displayName": "Might",
+      "type": "component",
+      "repeatable": false,
+      "component": "player.stat-pool"
+    },
+    "intellect": {
+      "displayName": "Intellect",
+      "type": "component",
+      "repeatable": false,
+      "component": "player.stat-pool"
+    },
+    "speed": {
+      "displayName": "Speed",
+      "type": "component",
+      "repeatable": false,
+      "component": "player.stat-pool"
+    },
+    "luck": {
+      "displayName": "Luck",
+      "type": "component",
+      "repeatable": false,
+      "component": "player.stat-pool"
+    }
+  }
+}

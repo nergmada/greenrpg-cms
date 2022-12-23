@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_general_active_combatants",
+  "info": {
+    "displayName": "Active Combatant",
+    "icon": "american-sign-language-interpreting",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "combatant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::combatant.combatant"
+    },
+    "health": {
+      "type": "component",
+      "repeatable": false,
+      "component": "player.stat-pool"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

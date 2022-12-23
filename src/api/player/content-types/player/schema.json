@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "singularName": "player",
+    "pluralName": "players",
+    "displayName": "Player",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "meta": {
+      "displayName": "Player Stats",
+      "type": "component",
+      "repeatable": false,
+      "component": "player.player-stats"
+    },
+    "pools": {
+      "displayName": "Pools",
+      "type": "component",
+      "repeatable": false,
+      "component": "player.pools"
+    },
+    "abilities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ability.ability"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "weapons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::weapon.weapon"
+    }
+  }
+}

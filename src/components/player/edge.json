@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_player_edges",
+  "info": {
+    "displayName": "Edge",
+    "icon": "angle-double-up"
+  },
+  "options": {},
+  "attributes": {
+    "might": {
+      "type": "integer"
+    },
+    "intellect": {
+      "type": "integer"
+    },
+    "speed": {
+      "type": "integer"
+    }
+  }
+}

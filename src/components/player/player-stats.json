@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_player_player_stats",
+  "info": {
+    "displayName": "Player Stats",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "tier": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "warrior",
+        "adept",
+        "explorer",
+        "speaker"
+      ]
+    },
+    "effort": {
+      "type": "integer"
+    },
+    "edge": {
+      "displayName": "Edge",
+      "type": "component",
+      "repeatable": false,
+      "component": "player.edge"
+    }
+  }
+}

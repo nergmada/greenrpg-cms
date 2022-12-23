@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_action_change_locations",
+  "info": {
+    "displayName": "Change Location",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "map": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::map.map"
+    },
+    "icon": {
+      "type": "integer"
+    }
+  }
+}

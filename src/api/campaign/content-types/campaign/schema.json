@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campaigns",
+  "info": {
+    "singularName": "campaign",
+    "pluralName": "campaigns",
+    "displayName": "Campaign",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "players": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::player.player"
+    },
+    "maps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::map.map"
+    },
+    "combatants": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::combatant.combatant"
+    },
+    "start_map": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::map.map"
+    },
+    "start_location": {
+      "type": "integer"
+    }
+  }
+}
